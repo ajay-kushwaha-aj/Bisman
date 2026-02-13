@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFF8F0;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .font-playfair  { font-family: 'Playfair Display', serif; }
+  .font-poppins   { font-family: 'Poppins', sans-serif; }
+
+  .shimmer-text {
+    background: linear-gradient(90deg, #D63384, #f0a0b8, #D4A24A, #f0a0b8, #D63384);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 5s linear infinite;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(214, 51, 132, 0.12);
+  }
+
+  .glass-dark {
+    background: rgba(26, 4, 8, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(247, 168, 184, 0.15);
+  }
+
+  .polaroid {
+    background: white;
+    padding: 12px 12px 40px 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .heart-float {
+    position: absolute;
+    bottom: -60px;
+    animation: floatUp linear infinite;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #FFF8F0; }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(#D63384, #D4A24A);
+    border-radius: 4px;
+  }
+}
