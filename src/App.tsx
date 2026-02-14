@@ -46,11 +46,11 @@ interface FallingHeart {
 ───────────────────────────────────────────────────────── */
 const PHOTOS: Photo[] = [
   { id:1, image: "/photo1.jpg", bg:"linear-gradient(135deg,#FADADD,#FFB6C1)", emoji:"🪯", label:"1st Meeting", hoverQuote:"Tune mujhe mara tha and i was like ye mujhe mar kaise di 😂", caption:"The day everything changed forever.", date:"August 28, 2023", loveNote:"Hamara 1st picture aur hamara pehla interaction and i pronounced your name wrongly - Bismaaan." },
-  { id:2, image: "/photo2.jpg", bg:"linear-gradient(135deg,#E6E6FA,#C4B5FD)", emoji:"💕", label:"1st Date", hoverQuote:"Official CEO of my happiness. 💼", caption:"Our first month felt like a beautiful dream.", date:"February 14, 2025", loveNote:"Every single day with you is my favourite day." },
-  { id:3, image: "/photo3.jpg", bg:"linear-gradient(135deg,#FFF8F0,#FCEABB)", emoji:"🌸", label:"Valentine's Day", hoverQuote:"My daily dopamine dose. ✨", caption:"You make ordinary days feel magical.", date:"February 14, 2025", loveNote:"I want to watch every sunset with you. Every single one." },
+  { id:2, image: "/photo2.jpg", bg:"linear-gradient(135deg,#E6E6FA,#C4B5FD)", emoji:"💕", label:"1st Date", hoverQuote:"Official CEO of my happiness. 💼", caption:"Our first month felt like a beautiful dream. - mere life ka pehla Date🌹", date:"February 14, 2025", loveNote:"Every single day with you is my favourite day." },
+  { id:3, image: "/photo3.jpg", bg:"linear-gradient(135deg,#FFF8F0,#FCEABB)", emoji:"🌸", label:"Valentine's Day", hoverQuote:"My daily dopamine dose. ✨", caption:"You make ordinary days feel magical.", date:"February 14, 2025", loveNote:"I love to be around you, its like a pyase ko Pani." },
   { id:4, image: "/photo4.jpg", bg:"linear-gradient(135deg,#FFE4EC,#FFC2D4)", emoji:"🚂", label:"1st Trip", hoverQuote:"Turned my 'I' into 'We'. Best upgrade. 💕", caption:"Celebrating you, us, and everything in between.", date:"January 22, 2025", loveNote:"Hamara pehla trip, abhi to puri duniya baki hai" },
   { id:5, image: "/photo5.jpg", bg:"linear-gradient(135deg,#D4EDDA,#A8D5B5)", emoji:"😘", label:"Twilight memory", hoverQuote:"Stars are less bright than your smile. Fact. 🌟", caption:"Some evenings are too beautiful to forget.", date:"November 20, 2025", loveNote:"Chaotic, laughing, and completely in love — that's us." },
-  { id:6, image: "/photo6.jpg", bg:"linear-gradient(135deg,#FDE8EE,#DC3C5A)", emoji:"🎉", label:"Anniversary photo", hoverQuote:"365 days of 'how am I this lucky?' 🍀", caption:"One full year of the best decision I ever made.", date:"January 17, 2026", loveNote:"Here's to forever, Bisman. You are my home." },
+  { id:6, image: "/photo6.jpg", bg:"linear-gradient(135deg,#FDE8EE,#DC3C5A)", emoji:"🎉", label:"Anniversary photo", hoverQuote:"365 days of 'how am I this lucky?' 🍀", caption:"One full year of the best decision I ever made.", date:"January 17, 2026", loveNote:"Here's to forever, Bisman. You are my home. mai tumhara guru hu. Respect me." },
 ];
 
 const QUIZ: QuizQ[] = [
@@ -65,10 +65,10 @@ const ROMANTIC_MSGS = [
   "You are the first thought every morning and the last one before sleep. That's not routine — that's love, Bisman. 🌹",
   "In a world full of noise, you are my favourite sound. Your laugh, your voice, your everything. 💕",
   "I didn't believe in soulmates until I noticed how perfectly you fit into every corner of my life. Now I'm a complete believer. ✨",
-  "You make ordinary Tuesday evenings feel like something worth writing about. That's extraordinary. 💫",
+  "आप ही के बिना हु क्यों बेचैन ,आप ही क्यों मेरी जरूरत है, वहम इतना हसी नहीं होता , वाकई आप खूबशरूरत है 💫",
   "Loving you is the easiest thing I've ever done. And I plan to keep doing it forever. 💍",
   "If I could go back and choose again, I'd choose you. Every single time, without a second thought. 🌸",
-  "You are the kind of person songs are written about. And I get to love you. Lucky doesn't cover it. 🎵",
+  "Ki chandi sona ek taraf, aur tera hona ek taraf, ek taraf teri aankhe 👀, jaadu tona ek taraf. 🌻",
   "My favourite version of myself is the one that exists when I'm with you. 💝",
   "You didn't just change my life, Bisman — you became the reason it feels worth living fully. 🥹",
 ];
@@ -1018,7 +1018,7 @@ const PhotoGallery: React.FC = () => {
                   {modalPhoto.loveNote}
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["Memory","Love","2025","Ours 💕"].map(tag => (
+                  {["Memory","Love","2026","Ours 💕"].map(tag => (
                     <span key={tag} className="font-poppins text-xs px-3 py-1 rounded-full"
                       style={{ fontFamily:"Poppins,sans-serif", background:"rgba(214,51,132,0.1)", color:"#D63384" }}>
                       {tag}
@@ -1075,10 +1075,10 @@ const SurpriseSection: React.FC<{ onMidnight: () => void; midnightMode: boolean 
         <div className="text-left space-y-4">
           <p className="font-playfair italic text-lg" style={{ fontFamily:'"Playfair Display",serif', color:"#1a0408" }}>My dearest Bisman,</p>
           <p className="font-poppins text-gray-600 leading-relaxed text-sm" style={{ fontFamily:"Poppins,sans-serif" }}>
-            There are a thousand things I want to say to you, but none of them feel big enough. So I'll just say this: you changed everything. The way I see the world, the way I feel about tomorrow, the way I smile at my phone at 2am — all because of you.
+            There are a thousand things I want to say to you, but none of them feel big enough. So I'll just say this: you changed everything. The way I see the world, the way I feel about things specially women, the way I smile at my phone at 2am — all because of you.
           </p>
           <p className="font-poppins text-gray-600 leading-relaxed text-sm" style={{ fontFamily:"Poppins,sans-serif" }}>
-            You are everything I didn't know I needed. Happy Anniversary. ❤️
+            You are best in the world 🌎. Happy Anniversary. ❤️
           </p>
           <p className="font-playfair italic text-deep-rose text-right" style={{ fontFamily:'"Playfair Display",serif', color:"#D63384" }}>— Always yours, Ajay 🌹</p>
         </div>
@@ -1321,7 +1321,7 @@ const LoveLetterSection: React.FC<{ midnightMode: boolean }> = ({ midnightMode }
           <div className="relative space-y-6">
             {[
               "My dearest Bisman,",
-              "A year ago, I had absolutely no idea that someone would come along and completely ruin my peace — in the most wonderful way possible. You walked in, and suddenly my playlists got better, my jokes got funnier, and my heart started doing these highly embarrassing backflips on a daily basis.",
+              "A year ago, I had absolutely no idea that someone would come along and completely ruin my peace — in the most wonderful way possible.",
               "You are the reason I smile at my phone like a complete fool. You are the reason I actually look forward to every single day. You are the chaos and the calm all at once — somehow you are both my favourite distraction and my biggest motivation.",
               "Today, on our 1st anniversary and Valentine's Day, I want you to know: you are everything. Completely, absolutely, ridiculously everything to me. 💕",
               "Thank you for choosing me, every single day.",
@@ -1377,13 +1377,13 @@ const FinalSection: React.FC = () => {
   }, []);
 
   const REASONS = [
-    { n:"01", t:"Your laugh is so infectious that I end up laughing even when I have no idea why — and I honestly don't care." },
+    { n:"01", t:"Koi Itna Pyara Kaise ho sakta hai - 2X, Wo bhi Sare ka sara kaise ho sakta hai, Tujhse milkar v agar udasi kam nahi hoti, tere bagair guzara kaise ho sakta hai." },
     { n:"02", t:"The way your eyes light up when you talk about something you love. It's the most beautiful thing I've seen." },
-    { n:"03", t:"You make me want to be better — not because you ask, but because you deserve nothing less than my best." },
+    { n:"03", t:"You make me want to be better — not because you ask, but because you deserve nothing less than my best. - pakka body bana lunga 😅" },
     { n:"04", t:"You're annoyingly right about most things. Extremely frustrating and I love you endlessly for it. 😅" },
-    { n:"05", t:"You remember the tiniest details I mention once and never repeat. That kind of love is rare, Bisman." },
+    { n:"05", t:"You remember the tiniest details I mention once. That kind of love is rare, Bisman." },
     { n:"06", t:"Because even on the hardest days, one message from you turns everything around. You're my safe place." },
-    { n:"07", t:"You choose to show up every single day — in big ways and small ones. That consistency is everything." },
+    { n:"07", t:"Your laugh is so infectious that I end up laughing even when I have no idea why — and I honestly don't care." },
     { n:"08", t:"Loving you feels like coming home. Peaceful, warm, and exactly where I'm supposed to be. Forever." },
   ];
 
