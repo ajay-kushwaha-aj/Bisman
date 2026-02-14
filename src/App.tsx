@@ -1410,7 +1410,7 @@ const FinalSection: React.FC = () => {
         </motion.p>
         <motion.p initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }} transition={{ delay:0.2 }}
           className="font-poppins text-white/55 max-w-lg mx-auto mb-16 leading-relaxed" style={{ fontFamily:"Poppins,sans-serif" }}>
-          365 days of laughs, fights we forgot by lunch, late-night calls, random memes, and a love that keeps growing stronger every moment.
+          365 days of laughs, fights we forgot by evening, video calls, naughty facial expression, and a love that keeps growing stronger every moment.
         </motion.p>
 
         {/* 8 Reasons */}
